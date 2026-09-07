@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>ArogyaX — Patient Case-Taking & Clinical Summarization</title>
+  <meta name="description" content="ArogyaX is a next-generation Patient Case-Taking and Clinical Summarization platform for modern healthcare. SIH26047." />
+  <link rel="icon" type="image/svg+xml" href="favicon.svg" />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet" />
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          fontFamily: { sans: ['Inter', 'sans-serif'] },
+          colors: {
+            primary:   { DEFAULT: '#0EA5A0', light: '#14B8B3', dark: '#0C8F8A' },
+            secondary: { DEFAULT: '#22C55E', light: '#4ADE80', dark: '#16A34A' },
+            navy:      { DEFAULT: '#1E3A8A', light: '#1D4ED8', dark: '#1e2d6b' },
+            accent:    '#0EA5E9',
+            bg:        '#F8FAFC',
+          },
+          backgroundImage: {
+            'gradient-primary': 'linear-gradient(135deg, #0EA5A0 0%, #0EA5E9 50%, #22C55E 100%)',
+            'gradient-dark':    'linear-gradient(135deg, #1E3A8A 0%, #0EA5A0 100%)',
+            'gradient-card':    'linear-gradient(135deg, rgba(14,165,160,0.08) 0%, rgba(34,197,94,0.05) 100%)',
+          },
+          boxShadow: {
+            card:  '0 4px 24px rgba(14,165,160,0.10)',
+            hover: '0 8px 40px rgba(14,165,160,0.20)',
+            nav:   '0 2px 20px rgba(30,58,138,0.08)',
+          },
+          animation: {
+            'fade-in':    'fadeIn 0.4s ease-out',
+            'slide-up':   'slideUp 0.4s ease-out',
+            'pulse-slow': 'pulse 3s infinite',
+            'spin-slow':  'spin 2s linear infinite',
+          },
+          keyframes: {
+            fadeIn:  { '0%': { opacity: '0' },           '100%': { opacity: '1' } },
+            slideUp: { '0%': { opacity: '0', transform: 'translateY(20px)' }, '100%': { opacity: '1', transform: 'translateY(0)' } },
+          },
+        }
+      }
+    }
+  </script>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body class="font-sans bg-bg text-slate-800 min-h-screen">
+
+  <div id="app"></div>
+
+  <!-- Three.js for 3D Body Map -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r134/three.min.js"></script>
+  <!-- Core App Script -->
+  <script src="app.js"></script>
+</body>
+</html>

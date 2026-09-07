@@ -1,0 +1,22 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100">
+  <defs>
+    <linearGradient id="lg1" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#0EA5A0"/>
+      <stop offset="50%" stop-color="#0EA5E9"/>
+      <stop offset="100%" stop-color="#22C55E"/>
+    </linearGradient>
+  </defs>
+  <!-- Cross body -->
+  <rect x="30" y="10" width="40" height="80" rx="8" fill="url(#lg1)"/>
+  <rect x="10" y="30" width="80" height="40" rx="8" fill="url(#lg1)"/>
+  <!-- Inner white highlight -->
+  <rect x="34" y="14" width="32" height="72" rx="6" fill="white" opacity="0.15"/>
+  <rect x="14" y="34" width="72" height="32" rx="6" fill="white" opacity="0.15"/>
+  <!-- Pulse / heartbeat line -->
+  <polyline points="22,50 32,50 36,38 41,62 46,44 51,56 56,50 78,50"
+    stroke="white" stroke-width="3.5" fill="none"
+    stroke-linecap="round" stroke-linejoin="round"/>
+  <!-- Leaf motif -->
+  <ellipse cx="84" cy="48" rx="7" ry="4" fill="white" opacity="0.85" transform="rotate(-30,84,48)"/>
+  <line x1="79" y1="50" x2="84" y2="44" stroke="white" stroke-width="1.2" stroke-linecap="round"/>
+</svg>
